@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jujutsu Kaisen-Contacto</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img id="logo" src ="https://www.themoviedb.org/t/p/w500/gPflM950uYjpJ20Pu1QMVBwkpBn.png" alt="logoJjk"/>
+    <div id="general" class="anchoContenedorPrincipal centrarDiv">
+        <div id="menu" class="anchoContenedorPrincipal centrarDiv">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/CarmenM_LDM/HTML/JujutsuKaisen/index.html "> INICIO</a></li> <!-- <a href> para meter otra pagina -->
+                <li><a href="http://127.0.0.1:5500/CarmenM_LDM/HTML/JujutsuKaisen/personajes.html"> PERSONAJES </a> </li>
+                <li><a href="http://127.0.0.1:5500/CarmenM_LDM/HTML/JujutsuKaisen/arcos.html"> ARCOS </a></li>
+                <li><a href="http://127.0.0.1:5500/CarmenM_LDM/HTML/JujutsuKaisen/contacto.HTML"> CONTACTO </a></li>
+            </ul>
+        </div>
+        <div class="contenido-contacto">
+            <h2 id="tituloInfo">CONTACTO</h2>
+            <div id="divContInfo">
+                <h3 class="titulo2">¿Quieres unirte a nuestro grupo?</h2>
+                <div class="divFormulario">
+                <form>
+                    <label for="nombre">Nombre y apellidos:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+            
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+            
+                    <label for="favorito">Anime favorito:</label>
+                    <input type="text" id="favorito" name="favorito" required>
+
+                    <label for="puntuacion">Valora tu experiencia en esta página web:</label>
+                        <div class="puntuacion">
+                        <input type="radio" id="estrella5" name="puntuacion" value="5">
+                        <label for="estrella5">☆</label>
+                        <input type="radio" id="estrella4" name="puntuacion" value="4">
+                        <label for="estrella4">☆</label>
+                        <input type="radio" id="estrella3" name="puntuacion" value="3">
+                        <label for="estrella3">☆</label>
+                        <input type="radio" id="estrella2" name="puntuacion" value="2">
+                        <label for="estrella2">☆</label>
+                        <input type="radio" id="estrella1" name="puntuacion" value="1">
+                        <label for="estrella1">☆</label>
+        </div>
+            
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

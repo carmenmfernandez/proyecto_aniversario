@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo HTML 2</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+        body{
+            background-image: url('https://c.wallhere.com/photos/42/d7/1920x1080_px_DC_Comics_superhero-738060.jpg!d');
+        }
+        h1{
+            margin: 10px;
+            font-size: 50px;
+            font-family: 'Cairo Play', sans-serif;
+            font-family: 'Russo One', sans-serif;
+            text-align: center;
+            color: red;
+            background-color: rgba(255, 255, 255, 0.689);
+        }
+        table{
+            background-color: rgba(240, 248, 255, 0.4);
+            font-family: 'Roboto Slab', serif;
+            font-size: 25px;
+            text-align: left;
+            border-spacing: 10px;
+            
+            
+        }
+        th{
+            background-color: rgba(240, 248, 255, 0.6) ;
+            text-align: center;
+            border-style: dotted;
+            border-radius: 5px;
+            
+        }
+        .enlace{
+            background-color: rgba(0, 68, 255, 0.405);
+            border-style: outset;
+            text-align: center;
+        }
+        .enlace:hover{
+            border-style: inset;
+        }
+        a{
+            color: white;
+            font-weight: bold;
+        }
+        .imagenes{
+            width: 150px;
+        }
+        .imagenes:hover{
+            width: 200px;
+            transition: 0.5s;
+            transition-delay: 0.2s;
+        }
+        
+    </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@300&family=Russo+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Superhéroes de DC</h1>
+<table style="width:100%" border="1">
+    <tr>
+        <th>Superhéroe</th>
+        <th>Poderes</th>
+        <th>Imagen</th>
+        <th>Biografía</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Batman</td>
+        <td>Inteligencia, habilidades de detective, habilidades marciales</td>
+        <td rowspan="2" ><img class="imagenes" src="https://creative-ads.org/wp-content/uploads/2015/10/Batman-cat-costume-for-Halloween-2.jpg"  alt="Batman"></td>
+        <td class="enlace"><a href="https://es.wikipedia.org/wiki/Batman" target="_blank">Más sobre Batman</a></td>
+    </tr>
+    <tr>
+        <td>Alias: El Caballero oscuro</td>
+    </tr>
+    <tr>
+        <td>Superman</td>
+        <td>Vuelo, super fuerza, visión de rayos X</td>
+        <td><img  class="imagenes" src="https://www.redferret.net/wp-content/uploads/2014/03/catsupermancostume2.jpg" alt="Batman"/></td>
+        <td class="enlace"><a href="https://es.wikipedia.org/wiki/Superman" target="_blank"> Más sobre superman</a></td>
+    </tr>
+    <tr>
+        <td>Wonder Woman</td>
+        <td>Fuerza sobrehumana, habilidades de lucha, lazos de la verdad</td>
+        <td><img class="imagenes" src="https://tse1.mm.bing.net/th?id=OIP.4nP_yS8o1vgRWOQAES7jIgHaKl&pid=Api&rs=1&c=1&qlt=95&w=84&h=120"  alt="Wonder Woman"></td>
+        <td class="enlace"><a href="https://es.wikipedia.org/wiki/Mujer_Maravilla" target="_blank">Más sobre Wonder Woman</a></td>
+    </tr>
+    <tr>
+        <td rowspan="2">Flash</td>
+        <td>Velocidad sobrehumana, curvatura del tiempo</td>
+        <td rowspan="2"><img class="imagenes" src="https://tse1.mm.bing.net/th?id=OIP.xFdmQ_Vy3Q8IBaLiScjJGQHaFj&pid=Api&P=0&h=180"  alt="Flash"></td>
+        <td rowspan="2" class="enlace"><a href="https://es.wikipedia.org/wiki/Flash_(historieta)" target="_blank">Más sobre Flash</a></td>
+    </tr>
+    <tr>
+        <td>Miembro de la Liga de la Justicia</td>
+    </tr>
+</table>
+</body>
+</html>

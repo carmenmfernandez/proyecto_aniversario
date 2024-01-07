@@ -1,0 +1,356 @@
+body {
+    background: rgb(157, 161, 177);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    
+}
+#logo{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+#general{
+    background: rgb(38, 48, 90);
+    vertical-align: top;
+}
+
+.anchoContenedorPrincipal {
+    width: 90%;
+}
+
+/*menu*/
+.centrarDiv {
+    margin-left: auto;
+    margin-right: auto;
+}
+#menu {
+    background: rgb(7, 11, 32);
+    text-align: center;
+}
+
+#menu li{
+    display: inline-block;
+    color: white;
+    width: 100px;
+}
+
+#menu li:hover {
+    background: #2b2d41;
+}
+
+/*contenido*/
+#contenido{
+    display: grid;
+    grid-template-columns: 40% 60% ;
+}
+
+/*noticias*/
+#divNoticias{
+    background:  rgb(76, 96, 175);
+    margin: 20px;
+
+}
+
+.imagenesNoticia{
+    width: 100%;
+}
+
+
+
+#tituloNoticias{
+    background: rgba(255, 245, 46, 0.549);
+    font-family: 'Russo One', sans-serif;
+    font-size: 25px;
+}
+
+.tablaConImagenes, th, td{
+    margin: 2px;
+    border: 0.1px solid rgb(6, 10, 44);
+    font-size: 20px;
+
+}
+
+th {
+    font-weight: normal;
+}
+
+.imagenesNoticia:hover{
+    opacity: 0.5;
+}
+
+.textoNegrita{
+    font-weight: 700; /*preguntar a rafa*/
+}
+/*fin noticias*/
+
+/*informacion*/
+#divInfo{
+    background:  rgb(76, 96, 175);
+    margin-right: 20px;
+}
+
+#tituloInfo{
+    font-family: 'Russo One', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(7, 11, 32);
+}
+
+#divContInfo{
+    background: rgba(255, 245, 46, 0.549);
+    margin: 1%;
+}
+
+hr{
+    width: 95%; 
+}
+
+.titulo2{
+    font-family: 'Russo One', sans-serif;
+    color: rgb(7, 11, 32);
+    font-size: 30px;
+    margin: 2.5%;
+    text-align: center;
+}
+
+.tablaSinopsis, th, td{
+    margin: 1%;
+    border: 0px;
+}
+.contenidoSinopsis{
+    margin: 1%;
+    width: 58%;
+    font-size: 20px;
+}
+
+.celdaImagenSinopsis{
+    width: 38%;
+  
+}
+
+#portadaManga{
+    width: 100%;
+}
+/*fin div info*/
+
+/*div musica*/
+#divMusica{
+    background:  rgb(76, 96, 175);
+    margin: 20px;
+    width: 243%;
+
+}
+
+#tituloMusica{
+    font-family: 'Russo One', sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+#tituloOpening{
+    width: 95%;
+    background: rgba(255, 245, 46, 0.549);
+    margin:auto;
+}
+
+.titulos-musica{
+    width: 100px;
+    margin: auto;
+    text-align: center;
+}
+
+.contenedor-video{
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.contenedor-video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+/*pagina personajes*/
+.contenido-personajes{
+    background:  rgb(76, 96, 175);
+    margin: 20px;
+}
+
+.contenido-personajes img{
+    width: auto;
+}
+
+p {
+    text-align: center;
+}
+
+#div-tablap2 {
+    position: relative;
+    overflow: hidden;
+}
+
+#div-tablap2 .tablaConImagenes {
+    width: 80%; 
+    height: 50%;
+    margin: auto;
+}
+
+.tablaConImagenes table {
+    width: 100%;
+    height: 100%;
+}
+
+.tablaConImagenes .imagenTablaP2 {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.tablaConImagenes .imagenTablaP2 img {
+    width: 500px; 
+    height: auto;  
+    display: block; 
+    margin:  auto; 
+}
+
+.tablaConImagenes .textoTablaP2{
+    text-align: center;
+}
+
+
+/*pagina arcos*/
+.contenido-arcos{
+    background:  rgb(76, 96, 175);
+    margin: 20px;
+}
+
+.contenido-arcos .arco {
+    text-align: center; 
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.contenido-arcos .arco img {
+    width: 40%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.contenido-arcos .arco h3 {
+    margin: 0; 
+    font-size: 1.5em; 
+    margin-bottom: 10px; 
+}
+
+.contenido-arcos .arco p {
+    font-size: 1.2em; 
+    margin: 0; 
+}
+
+/*pagina contacto*/
+
+.contenido-contacto{
+    background:  rgb(76, 96, 175);
+    margin: 20px;
+}
+
+.divFormulario {
+    max-width: 100%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.puntuacion {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.puntuacion input {
+    display: none;
+}
+
+.puntuacion label {
+    cursor: pointer;
+    color: #ddd;
+}
+
+.puntuacion label:hover,
+.puntuacion label:hover ~ label,
+.puntuacion input:checked ~ label {
+    color: #f7d620; 
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/*pagina personajes especifica*/
+
+.contenido-personajes2{
+    background:  rgb(76, 96, 175);
+    margin: 20px;
+}
+
+.divPersonajesEspecificos {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+}
+
+.columna-izq {
+    float: left;
+    width: 70%; 
+    padding-right: 20px; 
+}
+
+.columna-dch {
+    float: right;
+    width: 25%; 
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block; 
+    border-radius: 8px; 
+}
