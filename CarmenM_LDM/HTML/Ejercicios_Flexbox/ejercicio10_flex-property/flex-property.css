@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px solid red;
+    height: 100vh;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.box {
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, .1);
+    width: 49%;
+}
+
+.box1 { background:#1abc9c; height: 15%;}
+.box2 { background:#3498db; height: 25%;}
+.box3 { background:#9b59b6; height: 30%;}
+.box4 { background:#34495e; height: 6%;}
+.box5 { background:#f1c40f; height: 44%;}
+.box6 { background:#e67e22; height: 44%;}
