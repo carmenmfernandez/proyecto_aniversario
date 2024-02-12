@@ -1,0 +1,22 @@
+body {
+  background-color: #ffffff;
+  color: black;
+}
+
+.button {
+  background-color: blue;
+}
+
+.billing-address {
+  color: rgb(98, 98, 98);
+}
+
+.promo-code {
+  color: #00aa00;
+}
+
+.your-cart {
+  color: rgb(98, 98, 98);
+}
+
+/*# sourceMappingURL=index.css.map */

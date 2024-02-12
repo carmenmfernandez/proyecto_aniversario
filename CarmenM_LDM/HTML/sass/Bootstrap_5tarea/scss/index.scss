@@ -1,0 +1,30 @@
+// index.scss
+
+@import "colores";
+
+@mixin normal-color($color:rgb(98, 98, 98)) {
+    color: $color;
+}
+
+body {
+    background-color: $background-color;
+    color: $normal-color;
+}
+
+.button{
+    background-color: $boton-color;
+}
+
+.billing-address{
+     @include normal-color();
+}
+
+.promo-code {
+    color: $promo-code-color; // Texto "PROMO CODE" en verde
+}
+
+.your-cart{
+    @include normal-color();
+}
+
+
