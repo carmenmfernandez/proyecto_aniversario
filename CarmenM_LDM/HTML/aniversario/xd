@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenedor con Fotos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: pink;
+            margin: 0;
+            padding-top: 100px; /* Espacio para el contenedor fijo */
+        }
+
+        .top-container {
+            background-color: rgba(251, 151, 187, 0.8);
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .photo-container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .photo-container .photo-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+            height: 0; /* Fuerza una relación de aspecto 1:1 */
+            padding-bottom: 100%; /* Relación de aspecto 1:1 */
+            margin-bottom: 20px; /* Espacio entre cada foto */
+        }
+
+        .photo-container .photo-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin deformarla */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .photo-container .photo-item:hover {
+            transform: scale(1.1);
+        }
+
+        .photo-container .photo-item .message {
+            display: none; /* Ocultamos el mensaje por defecto */
+        }
+
+        .text-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+        }
+
+        .text-container h3 {
+            margin-bottom: 20px;
+        }
+
+        .text-container img.small-image {
+            max-width: 50%; /* Ajusta este valor según lo necesario */
+            height: auto;
+            border-radius: 10px; /* Esquinas redondeadas */
+            margin-top: 20px; /* Espacio superior */
+        }
+
+        .carousel-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+        }
+
+        .carousel-container h3 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-container">
+        <h1>Feliz Aniversario amor</h1>
+        <h2>04/07/2021 &#128150;</h2>
+    </div>
+
+    <div class="container-fluid photo-container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="photo-item" onclick="showMessage('Feliz Aniversario! Te amo mucho&#128151;')">
+                    <img src="fotos/IMG_4434.jpg" class="img-fluid" alt="Foto 1">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="photo-item" onclick="showMessage('Feliz Aniversario! Te amo mucho&#128151;')">
+                    <img src="fotos/IMG_9571.jpg" class="img-fluid" alt="Foto 2">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="photo-item" onclick="showMessage('Feliz Aniversario! Te amo mucho&#128151;')">
+                    <img src="fotos/IMG_7066.jpg" class="img-fluid" alt="Foto 3">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="photo-item" onclick="showMessage('Feliz Aniversario! Te amo mucho&#128151;')">
+                    <img src="fotos/IMG_2565.jpg" class="img-fluid" alt="Foto 4">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="photo-item" onclick="showMessage('Feliz Aniversario! Te amo mucho&#128151;')">
+                    <img src="fotos/637a2753-3c0c-42a7-87c4-8cacd1cc54c7.JPG" class="img-fluid" alt="Foto 5">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="photo-item" onclick="showMessage('Feliz Aniversario! Te amo mucho&#128151;')">
+                    <img src="fotos/686BBC7B-8320-46F7-970E-74B3BA9372DA.JPG" class="img-fluid" alt="Foto 6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-container">
+        <h3>Una Carta Especial</h3>
+        <p>Hoy celebramos tres años juntos y esta es la tercera carta que te escribo por nuestro aniversario. Recuerdo que en la primera te dije que no se me daba bien esto de escribir cartas, pero aquí estoy de nuevo, intentando poner en palabras lo que siento por ti. <br>
+            <br> Empezamos nuestra historia en 2019, y aunque las circunstancias nos separaron por un tiempo, volvimos a intentarlo en 2021, y desde entonces hemos sido más fuertes que nunca. Estos tres años han sido los más maravillosos de mi vida. Eres mi alegría, mi apoyo incondicional y mi mejor amigo. <br>
+            <br> Gracias por hacerme sentir especial cada día y por compartir tu vida conmigo. Aunque escribir cartas no sea mi fuerte, quiero que sepas que te amo con todo mi corazón y que estoy emocionada por todo lo que el futuro nos tiene preparado. <br>
+            <br> Feliz aniversario, mi vida.
+        </p>
+        <img src="https://i.pinimg.com/originals/71/61/21/716121394a4614c7b2b0f891ff66881a.gif" class="small-image">
+    </div>
+
+    <div class="carousel-container">
+        <h3>Memorias Especiales</h3>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="fotos/IMG_4434.jpg" class="d-block w-100" alt="Foto 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="fotos/IMG_9571.jpg" class="d-block w-100" alt="Foto 2">
+                </div>
+                <div class="carousel-item">
+                    <video class="d-block w-100" controls>
+                        <source src="videos/video1.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de video.
+                    </video>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function showMessage(message) {
+            alert(message); // muestra el mensaje
+        }
+    </script>
+
+</body>
+
+</html>
